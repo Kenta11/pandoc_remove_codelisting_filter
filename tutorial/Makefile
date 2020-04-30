@@ -6,6 +6,8 @@ OPTIONS     = $(addprefix --filter=,$(FILTER))
 
 .SUFFIXES: .md .pdf
 
+.PHONY: all clean
+
 all: $(DOCUMENT)
 
 $(DOCUMENT): $(MANUSCRIPT)
