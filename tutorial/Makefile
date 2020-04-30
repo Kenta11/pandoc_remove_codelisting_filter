@@ -1,8 +1,10 @@
-MANUSCRIPT  = sample.md
-DOCUMENT    = $(subst .md,.pdf,$(MANUSCRIPT))
+MANUSCRIPT = sample.md
+DOCUMENT   = $(subst .md,.pdf,$(MANUSCRIPT))
 
-FILTER      = pandoc-crossref pandoc_remove_codelisting_filter 
-OPTIONS     = $(addprefix --filter=,$(FILTER))
+FILTER     = pandoc-crossref pandoc_remove_codelisting_filter 
+OPTIONS    = --pdf-engine=lualatex\
+             --listings\
+             $(addprefix --filter=,$(FILTER))
 
 .SUFFIXES: .md .pdf
 
@@ -11,9 +13,7 @@ OPTIONS     = $(addprefix --filter=,$(FILTER))
 all: $(DOCUMENT)
 
 $(DOCUMENT): $(MANUSCRIPT)
-	pandoc $< -o $@\
-		--pdf-engine=lualatex\
-		$(OPTIONS)
+	pandoc $< -o $@ $(OPTIONS)
 
 clean:
 	rm -rf *.aux *.log $(DOCUMENT)
