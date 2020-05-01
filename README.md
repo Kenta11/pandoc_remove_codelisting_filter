@@ -1,8 +1,8 @@
-# pandoc-remove-codelisting-filter
+# pandoc_remove_codelisting_filter
 
 ## Overview
 
-pandoc-remove-codelisting-filter is a filter for removing `codelisting` command of LaTeX.
+pandoc_remove_codelisting_filter is a filter for removing `codelisting` command of LaTeX.
 List may be cut off since [pandoc-crossref](https://github.com/lierdakil/pandoc-crossref) uses the `codelisting` command for lists.
 pandoc-remove-codelisting-filter ensure that lists in PDF are displayed properly.
 
@@ -14,7 +14,7 @@ pandoc-remove-codelisting-filter ensure that lists in PDF are displayed properly
 ## Install
 
 ```
-$ pip install https://github.com/Kenta11/pandoc-remove-codelisting-filter
+$ pip install https://github.com/Kenta11/pandoc_remove_codelisting_filter
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ $ pip install https://github.com/Kenta11/pandoc-remove-codelisting-filter
 ```
 $ pandoc sample.md -o sample.pdf\
          --pdf-engine=lualatex\
-         --filter=pandoc-crossref --filter=pandoc-remove-codelisting-filter
+         --filter=pandoc-crossref --filter=pandoc_remove_codelisting_filter
 ```
 
 ## Tutorial
