@@ -1,18 +1,14 @@
 ---
-documentclass: ltjsarticle
 title: Sample
 author: Kenta Arai
 header-includes:
-    - \usepackage[margin=1in]{geometry}
     - \usepackage{listings}
-    - \lstset{ frame=single }
-    - \renewcommand*\lstlistingname{コード}
 ---
 # Source code
 
 [@lst:source_code] shows source code.
 
-```{#lst:source_code .c .numberLines startFrom="1" caption="sample"}
+```{#lst:source_code .c .numberLines startFrom="1" caption="sample" frame=single}
 #include <stdio.h>
 
 #define ARRAY_SIZE 100
