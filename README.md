@@ -1,7 +1,6 @@
 # pandoc_remove_codelisting_filter
 
 [![LICENSE](https://img.shields.io/github/license/Kenta11/pandoc_remove_codelisting_filter)](LICENSE)
-![tweet](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FKenta11%2Fpandoc_remove_codelisting_filter)
 
 ## Overview
 
