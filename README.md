@@ -1,5 +1,8 @@
 # pandoc_remove_codelisting_filter
 
+[![LICENSE](https://img.shields.io/github/license/Kenta11/pandoc_remove_codelisting_filter)](LICENSE)
+![tweet](https://opensource.org/licenses/MIT)
+
 ## Overview
 
 pandoc_remove_codelisting_filter is the filter in order to render code blocks into multiple pages of a PDF file. If using pandoc and [pandoc-crossref](https://github.com/lierdakil/pandoc-crossref), perhaps code blocks go out of pages due to `codelisting` commands in a LaTeX file. Therefore the filter replaces `codelisting` commands with `lstlisting` commands.
@@ -37,10 +40,6 @@ header-includes:
 ## Tutorial
 
 Refer [tutorial](tutorial).
-
-## License
-
-[MIT License](LICENSE)
 
 ## Contact
 
